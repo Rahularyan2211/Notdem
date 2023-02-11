@@ -174,7 +174,7 @@ export default function Home() {
               value={title}
               disabled={!notes.length}
             />
-            <textarea className='bg-gray-100 flex mx-5 h-screen mb-4 border-2 overflow-auto text-2xl p-4'
+            <textarea className='bg-gray-100 flex mx-5 h-screen mb-4 border-2 overflow-auto p-2 text-xl md:text-2xl'
               placeholder="Start Writing here..."
               onChange={updateText}
               value={text}
