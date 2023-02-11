@@ -1,8 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# __Notdem__
 
-First, run the development server:
+An elegant note taking app made with NextJS and TailwindCSS, with Supabase for storage currently.
+
+Try out Notdem here: [Notdem](https://notdem.vercel.app/)
+
+![Notdem Website](/Images/Notdem.png "Notdem - Your note taking website")
+
+## Features
+- [x]  __Edit Notes__ : Edit Notes that you made and saved previously.
+
+## Upcoming Features
+
+- [ ] __Dark Mode__ : Dark and Light theme variants available for soothing experience.
+- [ ]  __MarkDown Support__ : Have a markdown support as you do not have to be vendor locked in and can shift notes in and out.
+- [ ]  __Focus Mode__: Providing you a minimilastic approch to writing and hiding that's not necessary and leave you with things that matters to you.
+- [ ]  __Sign-in and continue from anywhere__ : Have Authenication to be able to access your notes across all your devices on your account.
+- [ ]  __Share your notes__ : Share your notes to your friends in a click with link.
+
+If you have more features up in mind, drop your suggestion in issues or contact me via various channels in contact details.
+
+## __Getting Started with development__
+
+To develop and locally run Notdem:
+
+### __Clone Notdem Repo__
+
+Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
+
+Open your terminal at the desired location and run the following command to clone the repo:
+
+```bash
+git clone https://github.com/Rahularyan2211/Notdem.git
+```
+
+### __Run the Development Server__
+Now open the Notdem folder and run the development server to check:
 
 ```bash
 npm run dev
@@ -11,24 +44,3 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

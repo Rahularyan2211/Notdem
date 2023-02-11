@@ -1,36 +1,30 @@
-import { VscChromeClose } from "react-icons/vsc";
+import { MdDeleteOutline } from "react-icons/md";
+
+const styles = {
+    noteTitle: 'flex-auto font-semibold ',
+}
 
 export const NoteItem = ({
-  active = false,
-  text,
-  removeButton = true,
-  className = "",
-  onClick = () => {},
-  onRemove = () => {},
+    active = false,
+    title,
+    text,
+    className = "",
+    onClick = () => { },
+    onRemove = () => { },
 }) => {
-  return (
-    <li className="mb-4 block overflow-hidden">
-      <button
-        className={`p-5 block w-full ${
-          active
-            ? `bg-indigo-600 text-white`
-            : `bg-indigo-50 hover:bg-indigo-100 text-gray-600`
-        } rounded-lg text-lg font-semibold transition duration-300 text-left relative ${className}`}
-        onClick={onClick}
-      >
-        {text.length > 30 ? text.substring(0, 30) + "..." : text}
-        {text.length === 0 && "Start Writing..."}
-        {removeButton && (
-          <span
-            className={`absolute ${
-              active ? `right-2` : `-right-16`
-            } top-1/2 -translate-y-1/2 px-4 py-4 rounded-lg text-white flex justify-center items-center hover:bg-indigo-800 bg-indigo-500 transition duration-300`}
-            onClick={onRemove}
-          >
-            <VscChromeClose />
-          </span>
-        )}
-      </button>
-    </li>
-  );
+    return (
+        <button className='flex flex-row justify-between rounded  w-full p-2 items-center pl-2 cursor-pointer focus:border-2'
+            onClick={onClick}
+        >
+            <div className='flex-auto font-semibold text-left'>
+                {title.length > 25 ? title.substring(0, 25) + "..." : title}
+                {title.length === 0 && "Add title"}
+            </div>
+            <span className="text-2xl mr-2 hover:border-2 rounded drop-shadow-2xl" onClick={onRemove}>
+                <MdDeleteOutline />
+            </span>
+        </button >
+    );
 };
+
+export default NoteItem;
